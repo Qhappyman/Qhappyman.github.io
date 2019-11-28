@@ -5,12 +5,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Hello World - Qhappyman Blog</title>
+    <title>作用域链 - Qhappyman Blog</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="TriDiamond Obsidian,"> 
-    <meta name="description" content="欢迎来到我的博客，希望在共同学习中提出您的建议,Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any pr,"> 
+    <meta name="description" content="欢迎来到我的博客，希望在共同学习中提出您的建议,作用域，作用域链每个javascript函数都是一个对象，有着自己的属性，有些是我们可以访问到的，有些只供javascript引擎存取，例如[[scope]].[[scope]]就是我们常说的作用域,"> 
     <meta name="author" content="GuoJunqing"> 
     <link rel="alternative" href="atom.xml" title="Qhappyman Blog" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -43,7 +43,7 @@
     <div class="navigation animated fadeIn fast delay-1s">
         <img id="home-icon" class="icon-home" src="/img/favicon.png" alt="" data-url="https://qhappyman.github.io">
         <div id="play-icon" title="Play/Pause" class="iconfont icon-play"></div>
-        <h3 class="subtitle">Hello World</h3>
+        <h3 class="subtitle">作用域链</h3>
         <div class="social">
             <!--        <div class="like-icon">-->
             <!--            <a href="javascript:;" target="_blank" rel="noopener" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
@@ -75,22 +75,22 @@
                 
                 <a href="javascript:;" target="_blank" rel="noopener"><b>「 </b>Article<b> 」</b></a>
                 
-                November 27, 2019
+                November 28, 2019
             </p>
-            <h3 class="post-title animated fadeInDown"><a href="/2019/11/27/hello-world/" title="Hello World" class="">Hello World</a>
+            <h3 class="post-title animated fadeInDown"><a href="/2019/11/28/%E4%BD%9C%E7%94%A8%E5%9F%9F%E9%93%BE/" title="作用域链" class="">作用域链</a>
             </h3>
             
             <p class="post-count animated fadeInDown">
                 
                 <span>
                     <b class="iconfont icon-text2"></b> <i>Words count</i>
-                    2.4k
+                    4.2k
                 </span>
                 
                 
                 <span>
                     <b class="iconfont icon-timer__s"></b> <i>Reading time</i>
-                    2 mins.
+                    4 mins.
                 </span>
                 
                 
@@ -122,19 +122,30 @@
 <div class="article">
     <div class='main'>
         <div class="content markdown animated fadeIn">
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span></pre></td></tr></table></figure>
+            <h2 id="作用域，作用域链"><a href="#作用域，作用域链" class="headerlink" title="作用域，作用域链"></a>作用域，作用域链</h2><p>每个javascript函数都是一个对象，有着自己的属性，有些是我们可以访问到的，有些只供javascript引擎存取，例如[[scope]].[[scope]]就是我们常说的作用域，存储了执行期上下文的集合，所有的执行期上下文呈链式连接，也就是作用域链</p>
+<p>作用域：每当函数执行前一刻都会生成一个自己的内部环境，也就是作用域，每次函数执行时生成的作用域都是独一无二的，当函数执行完毕后这个环境就会被销毁</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="actionscript">	<span class="function"><span class="keyword">function</span> <span class="title">a</span><span class="params">()</span></span>&#123;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="actionscript">        <span class="keyword">var</span> b = <span class="number">1</span>;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">	&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">	a();</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"><span class="handlebars"><span class="xml"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span></span></span></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ hexo server</span></pre></td></tr></table></figure>
+<p>看着一段简单的代码，a函数被定义在全局里面，当a函数被定义时他会生成一个GO对象（Global Object),里面存储了全局的执行期上下文，放在a函数作用域链的顶端.</p>
+<p>当a函数执行时，又会生成一个AO对象(ActivationObject)，里面存储着a内部的执行期上下文，放在作用域链的顶端。层层递进，从而形成了作用域链，当函数执行时，就会沿着作用域链的顶端寻找他所需要的信息。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">a</span>(<span class="params"></span>)</span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">    <span class="keyword">var</span> b = <span class="number">1</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">c</span>(<span class="params"></span>)</span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">        b = <span class="number">2</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">    c();</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">    <span class="built_in">console</span>.log(b);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">a();</span></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ hexo generate</span></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<p>来看这一段，先分析一下他们的作用域链，a函数定义时生成一个GO对象，放在自己作用域链的顶端，当</p>
+<p>a函数执行时又会生成一个AO对象，AO,GO依次存放于[[scope]]中。当c函数定义时，他生成一个AO对象,里面放着时a的作用域链，当c被执行时又会生成一个自己的AO，放在作用域链的顶端，也就是：0：cAO 1:aAO 2GO,这样依次向下。这里有一个问题，c的作用域链里面存放着的aAO是否是a真正的AO呢，答案是是的，因为a只形成了一个自己的AO，c既然站在a的身体里看世界，他拿的是a的东西，自然看到的用的是a的AO，也就是说，在c函数里面修改a函数的变量会使变量值发生改变，当a再次访问这个变量时已经是修改后的值了。</p>
+<p>这就是作用域链的基本概念与解释，归纳一下重点：</p>
+<ul>
+<li><p>函数定义时拿上级函数的AO放在作用域链顶端</p>
+</li>
+<li><p>函数执行时生成自己的AO放在作用域链顶端</p>
+</li>
+<li><p>函数执行是按照从上往下的顺序在自己的作用域链里面查找变量</p>
+</li>
+<li><p>内部函数可修改外部函数的值，用的就是外部函数的AO</p>
+</li>
+<li><p>函数每次执行完毕就会销毁一次自己的作用域链，隐式销毁，所以每当函数执行就会重新创建一次。</p>
+<p>当js比较复杂是当然也是遵循这个规律，只是形成的作用域链比较长</p>
+</li>
+</ul>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls"
@@ -193,7 +204,7 @@
             <div class="box sticky animated fadeInRight faster">
                 <div id="toc" class="subbox">
                     <h4>Contents</h4>
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#作用域，作用域链"><span class="toc-number">1.</span> <span class="toc-text">作用域，作用域链</span></a></li></ol>
                 </div>
             </div>
             

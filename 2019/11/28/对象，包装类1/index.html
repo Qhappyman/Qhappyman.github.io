@@ -5,12 +5,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Hello World - Qhappyman Blog</title>
+    <title>对象，包装类1 - Qhappyman Blog</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="TriDiamond Obsidian,"> 
-    <meta name="description" content="欢迎来到我的博客，希望在共同学习中提出您的建议,Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any pr,"> 
+    <meta name="description" content="欢迎来到我的博客，希望在共同学习中提出您的建议,对象，包装类JavaScript 中的所有事物都是对象：字符串、数值、数组、函数…
+此外，JavaScript 允许自定义对象。
+首先说一下引用类型
+引用类型的值（对象）是引用类型的一个实例。在EC,"> 
     <meta name="author" content="GuoJunqing"> 
     <link rel="alternative" href="atom.xml" title="Qhappyman Blog" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -43,7 +46,7 @@
     <div class="navigation animated fadeIn fast delay-1s">
         <img id="home-icon" class="icon-home" src="/img/favicon.png" alt="" data-url="https://qhappyman.github.io">
         <div id="play-icon" title="Play/Pause" class="iconfont icon-play"></div>
-        <h3 class="subtitle">Hello World</h3>
+        <h3 class="subtitle">对象，包装类1</h3>
         <div class="social">
             <!--        <div class="like-icon">-->
             <!--            <a href="javascript:;" target="_blank" rel="noopener" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
@@ -75,22 +78,22 @@
                 
                 <a href="javascript:;" target="_blank" rel="noopener"><b>「 </b>Article<b> 」</b></a>
                 
-                November 27, 2019
+                November 28, 2019
             </p>
-            <h3 class="post-title animated fadeInDown"><a href="/2019/11/27/hello-world/" title="Hello World" class="">Hello World</a>
+            <h3 class="post-title animated fadeInDown"><a href="/2019/11/28/%E5%AF%B9%E8%B1%A1%EF%BC%8C%E5%8C%85%E8%A3%85%E7%B1%BB1/" title="对象，包装类1" class="">对象，包装类1</a>
             </h3>
             
             <p class="post-count animated fadeInDown">
                 
                 <span>
                     <b class="iconfont icon-text2"></b> <i>Words count</i>
-                    2.4k
+                    8k
                 </span>
                 
                 
                 <span>
                     <b class="iconfont icon-timer__s"></b> <i>Reading time</i>
-                    2 mins.
+                    7 mins.
                 </span>
                 
                 
@@ -122,19 +125,49 @@
 <div class="article">
     <div class='main'>
         <div class="content markdown animated fadeIn">
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span></pre></td></tr></table></figure>
+            <h2 id="对象，包装类"><a href="#对象，包装类" class="headerlink" title="对象，包装类"></a>对象，包装类</h2><p><strong>JavaScript 中的所有事物都是对象：字符串、数值、数组、函数…</strong></p>
+<p><strong>此外，JavaScript 允许自定义对象。</strong></p>
+<p>首先说一下引用类型</p>
+<p>引用类型的值（对象）是引用类型的一个实例。在ECMAScript中，引用类型是一种数据结构，用于将数据和功能组织在一起，他也常被称为类。但这种称呼斌不妥当，尽管ECMAScript从技术上讲是一门面向对象的语言，但他不具备传统面向对象所支持的类和接口的基本结构。引用类型有时候也被称为对象定义，因为他们描述的是一类对象所具有的属性和方法。上述的Object，Array，Function等都是引用类型，这一届主要说Object。</p>
+<p>Object需要创建自己的实例，通常为new操作符。</p>
+<p>正如描述一个人一样，对象有自己的属性和方法。例如：</p>
+<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> my = &#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">    name:<span class="string">"guojumnqing"</span>,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    sex:<span class="string">"male"</span>,</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">    run:<span class="function"><span class="keyword">function</span> <span class="params">()</span></span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">        </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ hexo server</span></pre></td></tr></table></figure>
+<p>上述创建了一个对象，有自己的属性和方法。</p>
+<h3 id="属性的增删改查"><a href="#属性的增删改查" class="headerlink" title="属性的增删改查"></a>属性的增删改查</h3><p>增：my.height = 175;</p>
+<p>改:my.name = “guoshuhan”;</p>
+<p>回来上面俩种方法也就会查了，至于删有一个特殊操作符：delete my.name;</p>
+<p>其实除了用对爱性名字来访问属性，还可以用this操作符，必要时候出现。</p>
+<p>若想执行方法，只需要Obiect.run（）,这样就执行了这个对象的方法，可以通过这个方法来动态改变对象的属性值。另外需要声明的一点，对象中的属性值不管这个属性有没有被声明都默认值为undefined;比如我们查询上面对象中的run.like,结果为undefined，并不会报错，这点与js的变量声明有所不同。</p>
+<h3 id="对象的创建方法"><a href="#对象的创建方法" class="headerlink" title="对象的创建方法"></a>对象的创建方法</h3><ol>
+<li><p>var a = {}     对象自变量/对象直接量</p>
+</li>
+<li><p>构造函数</p>
+<ol>
+<li><p>系统自带的函数：Object，Array等</p>
+<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="keyword">new</span> <span class="built_in">Object</span>();</span></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ hexo generate</span></pre></td></tr></table></figure>
+<p>此后，a就为一个对象实例，可进行增删改查等操作</p>
+</li>
+<li><p>自定义的函数</p>
+<p>命名规则：大驼峰式命名规则，即所有的单词首字母都要大写（为了将对象与其他变量或函数区分开来）</p>
+<p>使用this进行创建属性</p>
+<figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">person</span><span class="params">()</span></span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> person1 = <span class="keyword">new</span> person();</span></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span></pre></td></tr></table></figure>
+<p>这样可以常见多个对象实例，他们可以拥有共同的属性和方法，也可以有自己的属性和方法，正如一个工厂车间，所有车有着相同的基础配置，但是他们的外观有有所不同。</p>
+<figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title">person</span>()&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">    this.name = "people"；</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">    this.height = 200"；</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">    this.test = <span class="keyword">function</span>()&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">        this.height<span class="comment">--;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">    &#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">var Person1 = new person();</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">var Person2 = <span class="keyword">new</span> person();</span></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<p>这样Person1与Person2就被创建成功了，他们有着一部分共同的属性方法</p>
+<p>若要给每个对象添加自己的属性和方法，除了直接用Object.attribute =  …。还可以使用参数传递。</p>
+<p>例如</p>
+<figure class="highlight oxygene"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">person</span><span class="params">(color)</span><span class="comment">&#123;</span></span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="comment">    this.colour = color；</span></span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="comment">    this.name:"people"；</span></span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="comment">    this.height = 200"；</span></span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="comment">    this.test = function()&#123;</span></span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="comment">        this.height--;</span></span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="comment">    &#125;</span></span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"><span class="function">&#125;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="title">var</span> <span class="title">Person1</span> = <span class="title">new</span> <span class="title">person</span><span class="params">(<span class="string">'green'</span>)</span>;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> Person2 = <span class="keyword">new</span> person(<span class="string">'red'</span>);</span></pre></td></tr></table></figure>
+
+<p>这样Person1与Person2就有了自己的颜色</p>
+<p>** 注意俩种创建对象时候符号的问题 **</p>
+</li>
+</ol>
+</li>
+</ol>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls"
@@ -193,7 +226,7 @@
             <div class="box sticky animated fadeInRight faster">
                 <div id="toc" class="subbox">
                     <h4>Contents</h4>
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-number">1.</span> <span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-number">1.1.</span> <span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-number">1.2.</span> <span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-number">1.3.</span> <span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-number">1.4.</span> <span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#对象，包装类"><span class="toc-number">1.</span> <span class="toc-text">对象，包装类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#属性的增删改查"><span class="toc-number">1.1.</span> <span class="toc-text">属性的增删改查</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#对象的创建方法"><span class="toc-number">1.2.</span> <span class="toc-text">对象的创建方法</span></a></li></ol></li></ol>
                 </div>
             </div>
             
