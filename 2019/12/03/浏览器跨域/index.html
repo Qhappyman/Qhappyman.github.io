@@ -1,0 +1,500 @@
+
+<!DOCTYPE html>
+<html lang="en" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>浏览器跨域 - Qhappyman Blog</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="前端,javascript,"> 
+    <meta name="description" content="欢迎来到我的博客，希望在共同学习中提出您的建议,同源策略1995年，同源政策由 Netscape 公司引入浏览器。目前，所有浏览器都实行这个政策。
+最初，它的含义是指，A 网页设置的 Cookie，B 网页不能打开，除非这两个网页“同源”。所谓“,"> 
+    <meta name="author" content="GuoJunqing"> 
+    <link rel="alternative" href="atom.xml" title="Qhappyman Blog" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    <link href="https://fonts.loli.net/css?family=Roboto+Mono|Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1429596_nzgqgvnmkjb.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/codemirror/5.48.4/codemirror.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/codemirror/5.48.4/theme/dracula.css">
+    <link rel="stylesheet" href="/css/obsidian.css">
+    <link rel="stylesheet" href="/css/ball-atom.min.css">
+</head>
+
+
+<body class="loading">
+    <div class="loader">
+        <div class="la-ball-atom la-2x">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <span id="config-title" style="display:none">Qhappyman Blog</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div class="scrollbar gradient-bg-rev"></div>
+<div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <div class="navigation animated fadeIn fast delay-1s">
+        <img id="home-icon" class="icon-home" src="/img/favicon.png" alt="" data-url="https://qhappyman.github.io">
+        <div id="play-icon" title="Play/Pause" class="iconfont icon-play"></div>
+        <h3 class="subtitle">浏览器跨域</h3>
+        <div class="social">
+            <!--        <div class="like-icon">-->
+            <!--            <a href="javascript:;" target="_blank" rel="noopener" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+            <!--        </div>-->
+            <div>
+                <div class="share">
+                    
+                        <a href="javascript:;" target="_blank" rel="noopener" class="iconfont icon-share1"></a>
+                        <div class="share-component-cc" data-disabled="facebook,douban,linkedin,diandian,tencent,google"></div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="section">
+        <div class=article-header-wrapper>
+    <div class="article-header">
+        <div class="article-cover animated fadeIn" style="
+            animation-delay: 600ms;
+            animation-duration: 1.2s;
+            background-image: 
+                radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.65), #100e17),
+                url(/img/cover.jpg);">
+        </div>
+        <div class="else">
+            <p class="animated fadeInDown">
+                
+                <a href="javascript:;" target="_blank" rel="noopener"><b>「 </b>Article<b> 」</b></a>
+                
+                December 03, 2019
+            </p>
+            <h3 class="post-title animated fadeInDown"><a href="/2019/12/03/%E6%B5%8F%E8%A7%88%E5%99%A8%E8%B7%A8%E5%9F%9F/" title="浏览器跨域" class="">浏览器跨域</a>
+            </h3>
+            
+            <p class="post-count animated fadeInDown">
+                
+                <span>
+                    <b class="iconfont icon-text2"></b> <i>Words count</i>
+                    15k
+                </span>
+                
+                
+                <span>
+                    <b class="iconfont icon-timer__s"></b> <i>Reading time</i>
+                    13 mins.
+                </span>
+                
+                
+                
+                <span id="busuanzi_container_page_pv">
+                    <b class="iconfont icon-read"></b> <i>Read count</i>
+                    <span id="busuanzi_value_page_pv">0</span>
+                </span>
+                
+            </p>
+            
+            
+            <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/%E8%B7%A8%E5%9F%9F/" rel="tag">跨域</a></li></ul>
+            
+        </div>
+    </div>
+</div>
+
+<div class="screen-gradient-after">
+    <div class="screen-gradient-content">
+        <div class="screen-gradient-content-inside">
+            <div class="bold-underline-links screen-gradient-sponsor">
+                <p>
+                    <span class="animated fadeIn delay-1s"></span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="article">
+    <div class='main'>
+        <div class="content markdown animated fadeIn">
+            <h2 id="同源策略"><a href="#同源策略" class="headerlink" title="同源策略"></a>同源策略</h2><p>1995年，同源政策由 Netscape 公司引入浏览器。目前，所有浏览器都实行这个政策。</p>
+<p>最初，它的含义是指，A 网页设置的 Cookie，B 网页不能打开，除非这两个网页“同源”。所谓“同源”指的是“三个相同”：</p>
+<ul>
+<li><p>协议相同</p>
+</li>
+<li><p>域名相同</p>
+</li>
+<li><p>端口相同</p>
+<p>同源政策的目的，是为了保证用户信息的安全，防止恶意的网站窃取数据。</p>
+<p>设想这样一种情况：A 网站是一家银行，用户登录以后，A 网站在用户的机器上设置了一个 Cookie，包含了一些隐私信息（比如存款总额）。用户离开 A 网站以后，又去访问 B 网站，如果没有同源限制，B 网站可以读取 A 网站的 Cookie，那么隐私信息就会泄漏。更可怕的是，Cookie 往往用来保存用户的登录状态，如果用户没有退出登录，其他网站就可以冒充用户，为所欲为。因为浏览器同时还规定，提交表单不受同源政策的限制。</p>
+</li>
+</ul>
+<h3 id="非同源主要由三种行为受限制"><a href="#非同源主要由三种行为受限制" class="headerlink" title="非同源主要由三种行为受限制"></a>非同源主要由三种行为受限制</h3><ol>
+<li>无法获取非同源网页的 cookie、localstorage 和 indexedDB。 </li>
+<li>无法访问非同源网页的 DOM （iframe）。 </li>
+<li>无法向非同源地址发送 AJAX 请求 或 fetch 请求（可以发送，但浏览器拒绝接受响应）。 </li>
+</ol>
+<h3 id="什么是跨域"><a href="#什么是跨域" class="headerlink" title="什么是跨域"></a>什么是跨域</h3><p>URL1 : <a href="https://link.jianshu.com/?t=http://kangbiao.org/index" target="_blank" rel="noopener">http://kangbiao.org/index</a>    URL2 : <a href="https://link.jianshu.com/?t=https://kangbiao.org/index" target="_blank" rel="noopener">https://kangbiao.org/index</a> </p>
+<p>是否跨域   : 是         原因  : 协议不同</p>
+<p>URL1 : <a href="https://link.jianshu.com/?t=http://kangbiao.org/index" target="_blank" rel="noopener">http://kangbiao.org/index</a>    URL2 :<a href="https://link.jianshu.com/?t=http://kangbiao.org:8080/index" target="_blank" rel="noopener">http://kangbiao.org:8080/index</a>  </p>
+<p>是否跨域   : 是         原因  : 端口号不同 </p>
+<p>URL1 : <a href="https://link.jianshu.com/?t=http://kangbiao.org/index" target="_blank" rel="noopener">http://kangbiao.org/index</a>    URL2 :<a href="https://link.jianshu.com/?t=https://kangbiao.org/index" target="_blank" rel="noopener">https://kangbiao.org/index</a>  </p>
+<p>是否跨域   : 是         原因  : 主机不同 </p>
+<p>URL1 : <a href="https://link.jianshu.com/?t=http://kangbiao.org/index" target="_blank" rel="noopener">http://kangbiao.org/index</a>    URL2 : <a href="https://link.jianshu.com/?t=http://t1.kangbiao.org/index" target="_blank" rel="noopener"> http://t1.kangbiao.org/index</a> </p>
+<p>是否跨域   : 是         原因  : 主机不同  </p>
+<p>通过上面的比较可以归纳出，跨域是指协议、主机地址、端口号这三个条件只要有一个不同则认为是跨域。 </p>
+<h3 id="另一个疑问"><a href="#另一个疑问" class="headerlink" title="另一个疑问"></a>另一个疑问</h3><p><strong>请求跨域了，那么请求有没有发出去？</strong> </p>
+<p>跨域并不是请求发不出去，请求能发出去，服务器端能收到请求并返回正常结果，只是被浏览器拦截了</p>
+<p>为什么表单可以发起跨域请求，而ajax不可以？</p>
+<p>说白了，表单就是提交数据，并不会获取最新的内容，所以可以发起跨域请求。而ajax可以获取响应，浏览器认为这并不安全，所以拦截了响应。</p>
+<h2 id="为什么要有跨域限制"><a href="#为什么要有跨域限制" class="headerlink" title="为什么要有跨域限制"></a>为什么要有跨域限制</h2><p>Ajax 的同源策略主要是为了防止 <code>CSRF</code>（跨站请求伪造） 攻击，如果没有 AJAX 同源策略，相当危险，我们发起的每一次 HTTP 请求都会带上请求地址对应的 cookie，那么可以做如下攻击： </p>
+<ol>
+<li>用户登录了自己的银行页面 <a href="http://mybank.com" target="_blank" rel="noopener">mybank.com</a>，<a href="http://mybank.xn--comcookie-yl6nr50bkgel81dia434tvyv911aka617dcq3j" target="_blank" rel="noopener">mybank.com向用户的cookie中添加用户标识</a>。</li>
+<li>用户浏览了恶意页面 <a href="http://evil.com" target="_blank" rel="noopener">evil.com</a>。执行了页面中的恶意AJAX请求代码。</li>
+<li><a href="http://evil.xn--comhttp-6y3l" target="_blank" rel="noopener">evil.com向http</a>://mybank.com发起AJAX HTTP请求，请求会默认把<a href="http://mybank.com对应cookie也同时发送过去。" target="_blank" rel="noopener">http://mybank.com对应cookie也同时发送过去。</a></li>
+<li>银行页面从发送的cookie中提取用户标识，验证用户无误，response中返回请求数据。此时数据就泄露了。</li>
+<li>而且由于Ajax在后台执行，用户无法感知这一过程。</li>
+</ol>
+<p>当我们浏览信息时，看起来获取到了所需要的内容，但是如果有恶意攻击我们是无法用肉眼察觉的，这些攻击会盗取个人信息，隐私</p>
+<ol>
+<li><p>DOM同源策略也一样，如果 <code>iframe</code> 之间可以跨域访问，可以这样攻击： </p>
+<p>做一个假网站，里面用iframe嵌套一个银行网站 <a href="http://mybank.com" target="_blank" rel="noopener">mybank.com</a>。</p>
+</li>
+<li><p>把iframe宽高啥的调整到页面全部，这样用户进来除了域名，别的部分和银行的网站没有任何差别。</p>
+</li>
+<li><p>这时如果用户输入账号密码，我们的主网站可以跨域访问到<a href="http://mybank.com的dom节点，就可以拿到用户的输入了，那么就完成了一次攻击。" target="_blank" rel="noopener">http://mybank.com的dom节点，就可以拿到用户的输入了，那么就完成了一次攻击。</a></p>
+<h2 id="解决跨域"><a href="#解决跨域" class="headerlink" title="解决跨域"></a>解决跨域</h2></li>
+</ol>
+<h3 id="CORS"><a href="#CORS" class="headerlink" title="CORS"></a>CORS</h3><p>CORS 是一个 W3C 标准，全称是跨域资源共享（Cross-origin resource sharing），它允许浏览器向跨源服务器，发出XMLHttpRequest请求。 </p>
+<h4 id="CORS跨域判定流程"><a href="#CORS跨域判定流程" class="headerlink" title="CORS跨域判定流程"></a>CORS跨域判定流程</h4><ol>
+<li>浏览器先根据同源策略对前端页面和后台交互地址做匹配，若同源，则直接发送数据请求；若不同源，则发送跨域请求。</li>
+<li>服务器收到浏览器跨域请求后，根据自身配置返回对应文件头。若未配置过任何允许跨域，则文件头里不包含 <code>Access-Control-Allow-origin</code> 字段，若配置过域名，则返回 <code>Access-Control-Allow-origin + 对应配置规则里的域名的方式</code>。</li>
+<li>浏览器根据接受到的 响应头里的 <code>Access-Control-Allow-origin</code> 字段做匹配，若无该字段，说明不允许跨域，从而抛出一个错误；若有该字段，则对字段内容和当前域名做比对，如果同源，则说明可以跨域，浏览器接受该响应；若不同源，则说明该域名不可跨域，浏览器不接受该响应，并抛出一个错误。</li>
+</ol>
+<h4 id="服务器是否指定跨域请求"><a href="#服务器是否指定跨域请求" class="headerlink" title="服务器是否指定跨域请求"></a>服务器是否指定跨域请求</h4><ol>
+<li><p>服务器允许跨域请求，但是 Origin 指定的源，不在许可范围内，服务器会返回一个正常的HTTP回应。浏览器发现，这个回应的头信息没有包含 <code>Access-Control-Allow-Origin</code> 字段，就知道出错了，从而抛出一个错误，被 XMLHttpRequest的onerror 回调函数捕获。注意，这种错误无法通过状态码识别，因为 HTTP 回应的状态码有可能是200。</p>
+<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&lt;!<span class="comment">--控制台返回结果--&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"> XMLHttpRequest cannot <span class="keyword">load</span> http://localhost/city.json.</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"> The <span class="string">'Access-Control-Allow-Origin'</span> <span class="keyword">header</span> has a <span class="keyword">value</span> <span class="string">'http://segmentfault.com'</span> that <span class="keyword">is</span> <span class="keyword">not</span> equal <span class="keyword">to</span> the supplied origin. </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"> Origin <span class="string">'http://www.zhihu.com'</span> <span class="keyword">is</span> therefore notallowed <span class="keyword">access</span>.</span></pre></td></tr></table></figure>
+
+
+
+</li>
+</ol>
+<ol start="2">
+<li><p>服务器不允许任何跨域请求 </p>
+<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&lt;!<span class="comment">--控制台返回结果--&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">XMLHttpRequest cannot <span class="keyword">load</span> http://localhost/city.json.</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">No</span> <span class="string">'Access-Control-Allow-Origin'</span> <span class="keyword">header</span> <span class="keyword">is</span> present <span class="keyword">on</span> the requested resource. </span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">Origin <span class="string">'http://www.zhihu.com'</span> <span class="keyword">is</span> therefore <span class="keyword">not</span> allowed <span class="keyword">access</span>.</span></pre></td></tr></table></figure>
+
+<h4 id="简单请求"><a href="#简单请求" class="headerlink" title="简单请求"></a>简单请求</h4><p>条件：</p>
+<ol>
+<li><p>使用 <code>GET、POST、HEAD</code> 其中一种请求方法。 </p>
+</li>
+<li><p>Accept</p>
+<p>Accept-Language</p>
+<p>Content-Language</p>
+<p>Last-Event-ID</p>
+<p>Content-Type：只限于三个值 <code>application/x-www-form-urlencoded、multipart/form-data、text/plain</code></p>
+</li>
+<li><p>请求中的任意XMLHttpRequestUpload 对象均没有注册任何事件监听器 </p>
+</li>
+<li><p>XMLHttpRequestUpload 对象可以使用 XMLHttpRequest.upload 属性访问。 请求中没有使用 ReadableStream 对象。 </p>
+<p>对于简单请求，浏览器直接发起 CORS 请求，具体来说就是服务器端会根据请求头信息中的 <code>origin</code> 字段（包括了协议 + 域名 + 端口），来决定是否同意这次请求。 </p>
+<p>如果 <code>origin</code> 指定的源在许可范围内，服务器返回的响应，会多出几个头信息字段： </p>
+</li>
+</ol>
+<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">Access-Control-Allow-<span class="string">Origin:</span> <span class="string">http:</span><span class="comment">//xxx.xxx.com</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">Access-Control-Allow-<span class="string">Credentials:</span> <span class="literal">true</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">Access-Control-Expose-<span class="string">Headers:</span> FooBar</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">Content-<span class="string">Type:</span> text/html; charset=utf<span class="number">-8</span></span></pre></td></tr></table></figure>
+
+<h4 id="非简单请求"><a href="#非简单请求" class="headerlink" title="非简单请求"></a>非简单请求</h4><p>请求方法是 <code>put</code> 或 <code>delete</code>，或者 <code>content-type</code> 的类型是 <code>application/json</code> </p>
+<p>非简单请求的 CORS 请求，会在正式通信之前，使用 <code>OPTIONS</code> 方法发起一个预检（preflight）请求到服务器，浏览器先询问服务器，当前网页所在的域名是否在服务器的许可名单之中，以及可以使用哪些 HTTP 动词和头信息字段。只有得到肯定答复，浏览器才会发出正式的 XMLHttpRequest 请求，否则就报错。</p>
+<p>预请求头部 :</p>
+<figure class="highlight oxygene"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">OPTIONS /cors HTTP/<span class="number">1.1</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">Origin: http:<span class="comment">//api.bob.com</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">Access-Control-Request-<span class="function"><span class="keyword">Method</span>:</span> PUT</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">Access-Control-Request-Headers: X-Custom-Header</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">Host: api.alice.com</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">Accept-Language: en-US</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">Connection: keep-alive</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line">User-Agent: Mozilla/<span class="number">5.0</span>...</span></pre></td></tr></table></figure>
+
+
+
+</li>
+</ol>
+<pre><code>一旦服务器通过了&quot;预检&quot;请求，以后每次浏览器正常的CORS请求，就都跟简单请求一样了 </code></pre><h3 id="JSONP"><a href="#JSONP" class="headerlink" title="JSONP"></a>JSONP</h3><p>   JSONP 的原理就是利用 <code>&lt;script&gt;</code> 标签的 src 属性没有跨域的限制，通过指向一个需要访问的地址，由服务端返回一个预先定义好的 Javascript 函数的调用，并且将服务器数据以该函数参数的形式传递过来，此方法需要前后端配合完成。 (只限于get请求)</p>
+   <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//定义获取数据的回调方法</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">getData</span>(<span class="params">data</span>) </span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">  <span class="built_in">console</span>.log(data);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line"><span class="comment">// 创建一个script标签，并且告诉后端回调函数名叫 getData</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> body = <span class="built_in">document</span>.getElementsByTagName(<span class="string">'body'</span>)[<span class="number">0</span>];</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> script = <span class="built_in">document</span>.gerElement(<span class="string">'script'</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">9</span></pre></td><td class="code"><pre><span class="line">script.type = <span class="string">'text/javasctipt'</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">10</span></pre></td><td class="code"><pre><span class="line">script.src = <span class="string">'demo.js?callback=getData'</span>;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">11</span></pre></td><td class="code"><pre><span class="line">body.appendChild(script);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">12</span></pre></td><td class="code"><pre><span class="line"></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">13</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//script 加载完毕之后从页面中删除,否则每次点击生成许多script标签</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">14</span></pre></td><td class="code"><pre><span class="line">script.onload = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">15</span></pre></td><td class="code"><pre><span class="line">  <span class="built_in">document</span>.body.removeChild(script);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">16</span></pre></td><td class="code"><pre><span class="line">&#125;</span></pre></td></tr></table></figure>
+
+<h3 id="Nginx服务器代理"><a href="#Nginx服务器代理" class="headerlink" title="Nginx服务器代理"></a>Nginx服务器代理</h3><p>   浏览器有跨域限制，但是服务器不存在跨域问题，所以可以由服务器请求所要域的资源再返回给客户端。 </p>
+<p>   实现思路：通过nginx配置一个代理服务器（域名与domain1相同，端口不同）做跳板机，反向代理访问domain2接口，并且可以顺便修改cookie中domain信息，方便当前域cookie写入，实现跨域登录。 </p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls"
+                data-autoplay="true">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+            <ul id="audio-list" style="display:none">
+                
+                
+                <li title='0' data-url='/statics/chengdu.mp3'></li>
+                
+                    
+            </ul>
+            
+            
+            
+    <div id='gitalk-container' class="comment link"
+        data-ae='true'
+        data-ci='ec894e2b66f752e8b7fb'
+        data-cs='3ccc2e92bb350688fe2c2dc2930189b62622bfb1'
+        data-r='blog-comments'
+        data-o='TriDiamond'
+        data-a='TriDiamond'
+        data-d=''
+    >Comments</div>
+
+
+            
+            
+        </div>
+        <div class="sidebar">
+            <div class="box animated fadeInRight">
+                <div class="subbox">
+                    <img src="https://res.cloudinary.com/tridiamond/image/upload/v1573019751/TriDiamond_logo_ui_xeublz.jpg" height=300 width=300></img>
+                    <p>GuoJunqing</p>
+                    <span>Think like an artist, develop like an artisan</span>
+                    <dl>
+                        <dd><a href="https://github.com/Qhappyman" target="_blank"><span
+                                    class=" iconfont icon-github"></span></a></dd>
+                        <dd><a href="" target="_blank"><span
+                                    class=" iconfont icon-twitter"></span></a></dd>
+                        <dd><a href="https://stackoverflow.com/users/7602324/tridiamond?tab=profile" target="_blank"><span
+                                    class=" iconfont icon-stack-overflow"></span></a></dd>
+                    </dl>
+                </div>
+                <ul>
+                    <li><a href="/">12 <p>Articles</p></a></li>
+                    <li><a href="/categories">0 <p>Categories</p></a></li>
+                    <li><a href="/tags">3 <p>Tags</p></a></li>
+                </ul>
+            </div>
+            
+            
+            
+            <div class="box sticky animated fadeInRight faster">
+                <div id="toc" class="subbox">
+                    <h4>Contents</h4>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#同源策略"><span class="toc-number">1.</span> <span class="toc-text">同源策略</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#非同源主要由三种行为受限制"><span class="toc-number">1.1.</span> <span class="toc-text">非同源主要由三种行为受限制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#什么是跨域"><span class="toc-number">1.2.</span> <span class="toc-text">什么是跨域</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#另一个疑问"><span class="toc-number">1.3.</span> <span class="toc-text">另一个疑问</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#为什么要有跨域限制"><span class="toc-number">2.</span> <span class="toc-text">为什么要有跨域限制</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#解决跨域"><span class="toc-number">3.</span> <span class="toc-text">解决跨域</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#CORS"><span class="toc-number">3.1.</span> <span class="toc-text">CORS</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#JSONP"><span class="toc-number">3.2.</span> <span class="toc-text">JSONP</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Nginx服务器代理"><span class="toc-number">3.3.</span> <span class="toc-text">Nginx服务器代理</span></a></li></ol></li></ol>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</div>
+
+    </div>
+</div>
+    <div id="back-to-top" class="animated fadeIn faster">
+        <div class="flow"></div>
+        <span class="percentage animated fadeIn faster">0%</span>
+        <span class="iconfont icon-top02 animated fadeIn faster"></span>
+    </div>
+</body>
+<footer>
+    <p class="copyright" id="copyright">
+        &copy; 2019
+        <span class="gradient-text">
+            GuoJunqing
+        </span>.
+        Powered by <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
+        Theme
+        <span class="gradient-text">
+            <a href="https://github.com/TriDiamond/hexo-theme-obsidian" title="Obsidian" target="_blank" rel="noopener">Obsidian</a>
+        </span>
+        <small><a href="https://github.com/TriDiamond/hexo-theme-obsidian/blob/master/CHANGELOG.md" title="v1.4.3" target="_blank" rel="noopener">v1.4.3</a></small>
+    </p>
+</footer>
+
+<script type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  MathJax.Hub.Config({
+    "HTML-CSS": {
+      preferredFont: "TeX",
+      availableFonts: ["STIX", "TeX"],
+      linebreaks: {
+        automatic: true
+      },
+      EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+      inlineMath: [
+        ["$", "$"],
+        ["\\(", "\\)"]
+      ],
+      processEscapes: true,
+      ignoreClass: "tex2jax_ignore|dno",
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      noUndefined: {
+        attributes: {
+          mathcolor: "red",
+          mathbackground: "#FFEEEE",
+          mathsize: "90%"
+        }
+      },
+      Macros: {
+        href: "{}"
+      }
+    },
+    messageStyle: "none"
+  });
+</script>
+<script>
+  function initialMathJax() {
+    MathJax.Hub.Queue(function () {
+      var all = MathJax.Hub.getAllJax(),
+        i;
+      // console.log(all);
+      for (i = 0; i < all.length; i += 1) {
+        console.log(all[i].SourceElement().parentNode)
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+    });
+  }
+
+  function reprocessMathJax() {
+    if (typeof MathJax !== 'undefined') {
+      MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+    }
+  }
+</script>
+
+
+
+    <link rel="stylesheet" href="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.css">
+    <script src="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/obsidian.js"></script>
+<script src="/js/jquery.truncate.js"></script>
+<script src="/js/search.js"></script>
+<script src="//cdn.bootcss.com/typed.js/2.0.10/typed.min.js"></script>
+<script src="//cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+
+<script src="https://cdn.bootcss.com/codemirror/5.48.4/codemirror.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/javascript/javascript.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/css/css.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/xml/xml.min.js"></script>
+
+
+
+    <script src="/js/busuanzi.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            if ($('span[id^="busuanzi_"]').length) {
+                initialBusuanzi();
+            }
+        });
+    </script>
+
+
+<link rel="stylesheet" href="//cdn.bootcss.com/photoswipe/4.1.3/photoswipe.min.css">
+<link rel="stylesheet" href="//cdn.bootcss.com/photoswipe/4.1.3/default-skin/default-skin.min.css">
+<script src="//cdn.bootcss.com/photoswipe/4.1.3/photoswipe.min.js"></script>
+<script src="//cdn.bootcss.com/photoswipe/4.1.3/photoswipe-ui-default.min.js"></script>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="//www.googletagmanager.com/gtag/js?id=UA-149874671-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-149874671-1');
+    </script>
+
+
+
+
+
+<script>
+    function initialTyped () {
+        var typedTextEl = $('.typed-text');
+        if (typedTextEl && typedTextEl.length > 0) {
+            var typed = new Typed('.typed-text', {
+                strings: ["Think like an artist, develop like an artisan", "Front End like me , I like it!"],
+                typeSpeed: 90,
+                loop: true,
+                loopCount: Infinity,
+                backSpeed: 20,
+            });
+        }
+    }
+
+    if ($('.article-header') && $('.article-header').length) {
+        $(document).ready(function () {
+            initialTyped();
+        });
+    }
+</script>
+
+
+
+
+</html>
