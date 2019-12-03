@@ -5,18 +5,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>事件 - Qhappyman Blog</title>
+    <title>泛型 - Qhappyman Blog</title>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="前端,javascript,"> 
-    <meta name="description" content="欢迎来到我的博客，希望在共同学习中提出您的建议,事件
-事件流
-事件流描述的是从页面中接收事件的顺序
-
-事件冒泡
-IE事件为事件冒泡，即事件由最具体的文档层层向上传播，相当于每层都包含了这个事件
-1&amp;lt;html&amp;gt;2	&amp;lt;head&amp;gt,"> 
+    <meta name="description" content="欢迎来到我的博客，希望在共同学习中提出您的建议,"> 
     <meta name="author" content="GuoJunqing"> 
     <link rel="alternative" href="atom.xml" title="Qhappyman Blog" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon.png"> 
@@ -49,7 +43,7 @@ IE事件为事件冒泡，即事件由最具体的文档层层向上传播，相
     <div class="navigation animated fadeIn fast delay-1s">
         <img id="home-icon" class="icon-home" src="/img/favicon.png" alt="" data-url="https://qhappyman.github.io">
         <div id="play-icon" title="Play/Pause" class="iconfont icon-play"></div>
-        <h3 class="subtitle">事件</h3>
+        <h3 class="subtitle">泛型</h3>
         <div class="social">
             <!--        <div class="like-icon">-->
             <!--            <a href="javascript:;" target="_blank" rel="noopener" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
@@ -81,22 +75,22 @@ IE事件为事件冒泡，即事件由最具体的文档层层向上传播，相
                 
                 <a href="javascript:;" target="_blank" rel="noopener"><b>「 </b>Article<b> 」</b></a>
                 
-                November 28, 2019
+                December 04, 2019
             </p>
-            <h3 class="post-title animated fadeInDown"><a href="/2019/11/28/%E4%BA%8B%E4%BB%B6/" title="事件" class="">事件</a>
+            <h3 class="post-title animated fadeInDown"><a href="/2019/12/04/%E6%B3%9B%E5%9E%8B/" title="泛型" class="">泛型</a>
             </h3>
             
             <p class="post-count animated fadeInDown">
                 
                 <span>
                     <b class="iconfont icon-text2"></b> <i>Words count</i>
-                    7.5k
+                    0
                 </span>
                 
                 
                 <span>
                     <b class="iconfont icon-timer__s"></b> <i>Reading time</i>
-                    7 mins.
+                    1 mins.
                 </span>
                 
                 
@@ -108,8 +102,6 @@ IE事件为事件冒泡，即事件由最具体的文档层层向上传播，相
                 
             </p>
             
-            
-            <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/%E4%BA%8B%E4%BB%B6/" rel="tag">事件</a></li></ul>
             
         </div>
     </div>
@@ -130,123 +122,7 @@ IE事件为事件冒泡，即事件由最具体的文档层层向上传播，相
 <div class="article">
     <div class='main'>
         <div class="content markdown animated fadeIn">
-            <h2 id="事件"><a href="#事件" class="headerlink" title="事件"></a>事件</h2><ol>
-<li><p>事件流</p>
-<p>事件流描述的是从页面中接收事件的顺序</p>
-<ul>
-<li><p>事件冒泡</p>
-<p>IE事件为事件冒泡，即事件由最具体的文档层层向上传播，相当于每层都包含了这个事件</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">	<span class="tag">&lt;<span class="name">head</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">		<span class="tag">&lt;<span class="name">title</span>&gt;</span>事件冒泡<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">	<span class="tag">&lt;/<span class="name">head</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">	<span class="tag">&lt;<span class="name">body</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">		<span class="tag">&lt;<span class="name">div</span>&gt;</span>Click me<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">	<span class="tag">&lt;/<span class="name">body</span>&gt;</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">8</span></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span></pre></td></tr></table></figure>
-
-<p>比如点击最里面的盒子，这个点击事件便会沿着DOM这个流向上传播</p>
-<p>div-&gt;body-&gt;html-&gt;document</p>
-<p>有的浏览器将一直冒泡到window对象</p>
-</li>
-<li><p>事件捕获</p>
-<p>以上面代码为例，在事件捕获阶段，document这个对象首先接收到click事件，然后沿DOM树传播到实际目标</p>
-<p>document-&gt;html-&gt;body-&gt;div</p>
-<h4 id="DOM事件流"><a href="#DOM事件流" class="headerlink" title="DOM事件流"></a>DOM事件流</h4><p>事件流包括三个阶段：</p>
-<ol>
-<li><p>事件捕获阶段</p>
-</li>
-<li><p>处于目标阶段</p>
-</li>
-<li><p>事件冒泡阶段</p>
-<p>其实相当于将上面俩部分合起来，当你点击div时，系统捕获你这个行为是从上到下，这个行为的引发事件是从下到上，通俗易懂</p>
-<p>注意捕获目标阶段在body就停止了，然后是处于目标阶段，当然的处于目标阶段也被包含到事件冒泡阶段的一部分</p>
-</li>
-</ol>
-</li>
-</ul>
-</li>
-<li><p>事件类型</p>
-<p>事件类型比较多，这里大概列举一下，需要时自己查</p>
-<ul>
-<li><p>UI事件</p>
-</li>
-<li><p>焦点事件（元素获得或失去焦点）</p>
-</li>
-<li><p>鼠标事件</p>
-</li>
-<li><p>滚轮事件</p>
-</li>
-<li><p>文本事件</p>
-</li>
-<li><p>键盘事件</p>
-</li>
-<li><p>合成事件</p>
-</li>
-<li><p>变动事件</p>
-</li>
-<li><p>变动名称事件</p>
-<h4 id="UI"><a href="#UI" class="headerlink" title="UI"></a>UI</h4><p>load,当元素加载完在元素上触发</p>
-<p>unload 当元素卸载完毕后在元素上触发，只要用户从一个页面切换到另一个页面就会触发，用途：清除引用，防止内存泄漏</p>
-<p>abort 当用户停止下载且没有下载完毕时触发</p>
-<p>error javaScript加载错误时触发，比如图像加载错误</p>
-<p>resize 当窗口或框架大小变化时在window触发</p>
-<p>scroll 当用户滚动带滚动条的内容时在该元素上触发</p>
-<h4 id="焦点事件"><a href="#焦点事件" class="headerlink" title="焦点事件"></a>焦点事件</h4><p>blur 元素失去焦点时触发，不会冒泡</p>
-<p>DOMFocusIn 元素获得焦点时触发，冒泡</p>
-<p>focus 获得焦点时触发，不冒泡</p>
-<p>focusin 获得焦点时触发，冒泡</p>
-<p>focusout 失去焦点时触发</p>
-<p>成对存在，历史版本问题</p>
-<p>焦点从一个元素移到另一个元素上发生的事件</p>
-<p>focusout-&gt;focusin</p>
-<p>blur-&gt;DOMFocusOut</p>
-<p>focus-&gt;DOMFocusIn</p>
-<h4 id="鼠标与滚轮事件"><a href="#鼠标与滚轮事件" class="headerlink" title="鼠标与滚轮事件"></a>鼠标与滚轮事件</h4><p>click 最普通的点击事件</p>
-<p>dblclick 双击按钮</p>
-<p>mousedown按下任意鼠标键触发</p>
-<p>mouseenter鼠标光标首次移到元素内部触发，不冒泡</p>
-<p>mouseleave</p>
-<p>mousemove鼠标在元素内部移动时重复触发</p>
-<p>mouseout鼠标位于一个元素上方，然后移到另一个元素时触发</p>
-<p>mouseover鼠标位于一个元素外部，首次移动到另一个元素边界内触发</p>
-<p>mouseup 释放鼠标按钮触发</p>
-<p>坐标位置：clientX clientY，视口中水平与垂直位置</p>
-<p>​        pageX pageY 页面中位置，不止视口</p>
-<p>​        screenX screenY 相对于整个电脑屏幕的位置</p>
-</li>
-</ul>
-</li>
-<li><p>事件委托</p>
-<p>事件委托又叫事件代理，其中与事件冒泡有着不可分割的联系，原理就是利用事件冒泡来实现</p>
-<figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&lt;ul&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">	&lt;<span class="built_in">li</span>&gt;<span class="built_in">first</span>&lt;/<span class="built_in">li</span>&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">	&lt;<span class="built_in">li</span>&gt;<span class="built_in">second</span>&lt;/<span class="built_in">li</span>&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">	&lt;<span class="built_in">li</span>&gt;<span class="built_in">third</span>&lt;/<span class="built_in">li</span>&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">&lt;/ul&gt;</span></pre></td></tr></table></figure>
-
-<p>看这一段代码，我们平时想为每一个li都添加一个点击事件，就设置三个onlick事件，这样不仅不美观，而且占用内存，影响页面加载。而利用事件冒泡就可以很好解决这个问题。我们可以直接在ul标签上添加一个onlick事件，因为每一个li都是位于ul下边，根据事件冒泡原理这个点击事件会一层一层上去，最终处理事件的是ul里面的函数，避免了代码繁杂</p>
-<ol start="4">
-<li><p>事件绑定</p>
-<ul>
-<li><p>使用DOM操作</p>
-<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">var <span class="attribute">a</span>=document.getelemetbyid(id);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">a.<span class="attribute">onlick</span>=functon()&#123;&#125;;</span></pre></td></tr></table></figure>
-</li>
-<li><p>直接在html标签中绑定</p>
-<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&lt;div onlick=<span class="string">"fun()"</span>&gt;&lt;/div&gt;</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">js:<span class="function"><span class="title">fun</span><span class="params">()</span></span>&#123;&#125;</span></pre></td></tr></table></figure>
-</li>
-<li><p>利用添加事件函数(事件监听函数)</p>
-<figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">elementObject.add<span class="constructor">EventListener(<span class="params">eventName</span>,<span class="params">handle</span>,<span class="params">useCapture</span>)</span>;</span></pre></td></tr></table></figure>
-
-<p>参数 obj为点击的元素对象，ev为事件类型注意要去掉事件的on，只写 click、dblclick、mouseover这样的事件，fn为事件运行的函数。 </p>
-<p>elementObject：DOM对象（即DOM元素 ）</p>
-<p>eventName：事件名称。注意，这里的事件名称没有“ on ”，如鼠标单击事件 click ，鼠标双击件 doubleclick ，鼠标移入事件 mouseover，鼠标移出事件 mouseout 等 </p>
-<p>handle：事件句柄函数，即用来处理事件的函数。 </p>
-<p>useCapture：Boolean类型，是否使用捕获，一般用false 。这里涉及到JavaScript事件流的概念，后续章节将会详细讲解。 </p>
-<h4 id="事件移除"><a href="#事件移除" class="headerlink" title="事件移除"></a>事件移除</h4><ul>
-<li><p>useCapture设为false</p>
-</li>
-<li><p>移除事件监听器</p>
-<figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">btn2.remove<span class="constructor">EventListener(<span class="string">"click"</span>,<span class="params">fn1</span>,<span class="params">false</span>)</span></span></pre></td></tr></table></figure>
-
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ol>
-</li>
-</ol>
-
+            
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls"
                 data-autoplay="true">
@@ -300,13 +176,6 @@ IE事件为事件冒泡，即事件由最具体的文档层层向上传播，相
             </div>
             
             
-            
-            <div class="box sticky animated fadeInRight faster">
-                <div id="toc" class="subbox">
-                    <h4>Contents</h4>
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#事件"><span class="toc-number">1.</span> <span class="toc-text">事件</span></a></li></ol>
-                </div>
-            </div>
             
             
         </div>
